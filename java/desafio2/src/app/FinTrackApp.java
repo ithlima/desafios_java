@@ -1,13 +1,14 @@
 package app;
 
 import java.util.Scanner;
+
 import controller.FinTracker;
-import model.Transacao;
-import model.TransacaoMensal;
 import exceptions.EntradaInvalidaException;
 import exceptions.TransacaoNaoEncontradaException;
+import model.Transacao;
+import model.TransacaoMensal;
 
-public class Main {
+public class FinTrackApp {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     FinTracker ft = new FinTracker();

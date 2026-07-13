@@ -3,11 +3,11 @@ package app;
 import java.util.Scanner;
 
 import controller.TaskManager;
-import model.Tarefa;
 import exceptions.EntradaInvalidaException;
 import exceptions.TarefaNaoEncontradaException;
+import model.Tarefa;
 
-public class Main {
+public class TaskManagerApp {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

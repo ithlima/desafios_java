@@ -2,13 +2,14 @@ package app;
 
 import java.util.List;
 import java.util.Scanner;
+
 import controller.Agenda;
+import exceptions.ContatoNaoEncontradoException;
 import model.Contato;
 import model.ContatoComercial;
 import utils.ValidadorEmail;
-import exceptions.ContatoNaoEncontradoException;
 
-public class Main {
+public class MyContactsApp {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     Agenda agenda = new Agenda();
@@ -64,12 +65,13 @@ public class Main {
           System.out.print("Nome para busca: ");
           String q = scanner.nextLine();
           List<Contato> res = agenda.buscarPorNome(q);
-          if (res.isEmpty())
+          if (res.isEmpty()) {
             System.out.println("Nenhum contato encontrado.");
-          else {
+          } else {
             System.out.println("Resultados:");
-            for (int i = 0; i < res.size(); i++)
+            for (int i = 0; i < res.size(); i++) {
               System.out.printf("%2d. %s%n", i + 1, res.get(i));
+            }
           }
           break;
 
