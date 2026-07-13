@@ -1,0 +1,6 @@
+out/
+bin/
+.vscode/
+.vscode/**/workspaceStorage/
+.vscode/**/history/
+**/*.class
